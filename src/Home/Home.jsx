@@ -1,7 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner/Banner";
 import Testimonial from "../Component/Testimonial/Testimonial";
-import logo from '../assets/logo.png'
 
 
 const Home = () => {
@@ -50,40 +49,6 @@ const Home = () => {
             <div className="my-20" >
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14600.300250182128!2d90.408883!3d23.8159297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c6feb6c1b7b1%3A0x76350c55ebc50c34!2sRadisson%20Blu%20Dhaka%20Water%20Garden!5e0!3m2!1sen!2sbd!4v1699592386157!5m2!1sen!2sbd" className="w-full h-80" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-            {/* footer */}
-            <div>
-                <div className="hero " style={{ backgroundImage: 'url(https://i.imgur.com/9KsFivT.jpg)' }}>
-                    <div className="hero-overlay bg-opacity-60"></div>
-                    <footer className="footer p-10 text-white t">
-                        <aside>
-                            <img src={logo} alt="" className="w-20" />
-                            <p className="font-bold text-lg">Royal <span className="text-btnColor">Oasis</span> </p>
-                        </aside>
-                        <nav>
-                            <header className="footer-title">Services</header>
-                            <a className="link link-hover">Branding</a>
-                            <a className="link link-hover">Design</a>
-                            <a className="link link-hover">Marketing</a>
-                            <a className="link link-hover">Advertisement</a>
-                        </nav>
-                        <nav>
-                            <header className="footer-title">Company</header>
-                            <a className="link link-hover">About us</a>
-                            <a className="link link-hover">Contact</a>
-                            <a className="link link-hover">Jobs</a>
-                            <a className="link link-hover">Press kit</a>
-                        </nav>
-                        <nav>
-                            <header className="footer-title">Legal</header>
-                            <a className="link link-hover">Terms of use</a>
-                            <a className="link link-hover">Privacy policy</a>
-                            <a className="link link-hover">Cookie policy</a>
-                        </nav>
-                    </footer>
-                </div>
-            </div>
-
         </div>
 
 

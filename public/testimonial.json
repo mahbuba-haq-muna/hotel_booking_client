@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Sophia Johnson",
+      "location": "New York, NY",
+      "rating": 5,
+      "comment": "An unforgettable experience! The attention to detail and the luxurious amenities at Royal Oasis made my stay truly remarkable. From the exquisite decor to the impeccable service, it exceeded all expectations. Immerse Yourself in Pure Luxury. I can't wait to return for another indulgent getaway.",
+      "img": "https://i.imgur.com/EBAyN65.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "location": "Los Angeles, CA",
+      "rating": 4,
+      "comment": "A hidden gem! I stumbled upon Royal Oasis during my travels, and it turned out to be a delightful surprise. The ambiance is sophisticated, the staff is friendly, and the rooms are both lavish and cozy. A perfect blend of luxury and comfort. Highly recommended!",
+      "img": "https://i.imgur.com/MCgf46N.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "location": "London, UK",
+      "rating": 5,
+      "comment": "Exceptional service and breathtaking views! My stay at Royal Oasis was nothing short of magical. The staff went above and beyond to ensure a seamless experience, and the panoramic views from my suite were absolutely stunning. This is the epitome of a luxurious escape.",
+      "img": "https://i.imgur.com/2mr5Qsa.jpg"
+    }
+  ]
+  

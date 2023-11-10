@@ -25,7 +25,7 @@ const Banner = () => {
                     {/* banner content */}
                 <div className="absolute h-[600px] flex items-center left-0 top-0 gap-4 ">
                     <div className="space-y-7 md:pl-20 text-white">
-                    <h2 className="text-6xl font-bold font-fontLibre drop-shadow-lg" data-aos="fade-up">Where Luxury Meets Tranquility</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-fontLibre drop-shadow-lg" data-aos="fade-up">Where Luxury Meets Tranquility</h2>
                     <p className='text-xl font-semibold drop-shadow-lg' data-aos="fade-down">Unwind in Style at Royal Ossis</p>
                     <button className="btn bg-btnColor" 
                     >Explore More</button>
@@ -42,7 +42,7 @@ const Banner = () => {
                      {/* banner content */}
                 <div className="absolute h-[600px] flex items-center left-0 top-0 gap-4 ">
                     <div className="space-y-7 md:pl-20 text-white">
-                    <h2 className="text-6xl font-bold font-fontLibre" data-aos="fade-up">Your Gateway to Elegance</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-fontLibre" data-aos="fade-up">Your Gateway to Elegance</h2>
                     <p className='text-xl font-semibold' data-aos="fade-down">Experience Luxury Beyond Compare</p>
                     <button className="btn bg-btnColor" 
                     >Explore More</button>
@@ -59,7 +59,7 @@ const Banner = () => {
                         {/* banner content */}
                 <div className="absolute h-[600px] flex items-center left-0 top-0 gap-4 ">
                     <div className="space-y-7 md:pl-20 text-white">
-                    <h2 className="text-6xl font-bold font-fontLibre drop-shadow-lg" data-aos="fade-up">Where Luxury Meets Tranquility</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-fontLibre drop-shadow-lg" data-aos="fade-up">Where Luxury Meets Tranquility</h2>
                     <p className='text-xl font-semibold drop-shadow-lg' data-aos="fade-down">Unwind in Style at Royal Ossis</p>
                     <button className="btn bg-btnColor" 
                     >Explore More</button>
@@ -76,7 +76,7 @@ const Banner = () => {
                     {/* banner content */}
                 <div className="absolute h-[600px] flex items-center left-0 top-0 gap-4 ">
                     <div className="space-y-7 md:pl-20 text-white">
-                    <h2 className="text-6xl font-bold font-fontLibre" data-aos="fade-up">Your Gateway to Elegance</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold font-fontLibre" data-aos="fade-up">Your Gateway to Elegance</h2>
                     <p className='text-xl font-semibold' data-aos="fade-down">Experience Luxury Beyond Compare</p>
                     <button className="btn bg-btnColor" 
                     >Explore More</button>

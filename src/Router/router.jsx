@@ -5,6 +5,7 @@ import Root from '../Layout/Root';
 import ErrorPage from '../ErrorPage/ErrorPage';
 import Login from '../Page/Login/Login';
 import Register from '../Page/Login/Register/Register';
+import Rooms from '../Page/Rooms/Rooms';
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
         {
           path: '/register',
           element: <Register></Register>
+        },
+        {
+          path: '/rooms',
+          element : <Rooms></Rooms>,
+          loader: () => fetch(`/public/rooms.json`)
         }
       ]
     },

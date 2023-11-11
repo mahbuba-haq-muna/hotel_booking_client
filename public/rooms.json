@@ -1,0 +1,94 @@
+[
+      {
+        "id": 1,
+        "name": "Deluxe Ocean View Room",
+        "description": "Experience ultimate relaxation and luxury in our Deluxe Ocean View Room. This spacious room features a king-size bed, a private balcony with stunning ocean views, and a modern bathroom with a jacuzzi. Whether you're seeking a romantic getaway or a serene retreat, this room offers everything you need for a memorable stay.",
+        "price_per_night": 250,
+        "room_size": "400 sq. ft",
+        "available_rooms": 10,
+        "special_offers": [
+          "Complimentary breakfast",
+          "Free Wi-Fi"
+        ],
+        "img1": "https://i.imgur.com/1eusWV5.jpg",
+        "img2": "https://i.imgur.com/UbQZvTM.jpg",
+        "img3": "https://i.imgur.com/0EspNyC.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Luxury Suite",
+        "description": "Indulge in the epitome of opulence with our spacious Luxury Suite. This suite features a separate living area, a king-size bed, and large windows offering panoramic city views. The marble bathroom boasts a deep soaking tub and a walk-in shower. Enjoy the perfect blend of comfort and elegance during your stay.",
+        "price_per_night": 350,
+        "room_size": "600 sq. ft",
+        "available_rooms": 8,
+        "special_offers": [
+          "Welcome drink",
+          "Late checkout"
+        ],
+        "img1": "https://i.imgur.com/VXGYXG3.jpg",
+        "img2": "https://i.imgur.com/DW0l4An.jpg",
+        "img3": "https://i.imgur.com/3v3F6cl.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Family Villa",
+        "description": "Our Family Villa is the ideal choice for families or groups. This spacious accommodation offers two bedrooms, a fully equipped kitchen, a private pool, and a lush garden. Relax on your private terrace and savor quality time with your loved ones in this tranquil oasis.",
+        "price_per_night": 450,
+        "room_size": "800 sq. ft",
+        "available_rooms": 5,
+        "special_offers": [
+          "Kids stay free",
+          "Complimentary shuttle service"
+        ],
+        "img1": "https://i.imgur.com/SXGgByf.jpg",
+        "img2": "https://i.imgur.com/tWwk2fu.jpg",
+        "img3": "https://i.imgur.com/c6Zid9o.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Presidential Suite",
+        "description": "Experience luxury at its finest in our Presidential Suite. This expansive suite boasts a grand bedroom, a separate living and dining area, a private jacuzzi, and breathtaking mountain vistas. Our exclusive suite offers the utmost in privacy, comfort, and personalized service.",
+        "price_per_night": 800,
+        "room_size": "1200 sq. ft",
+        "available_rooms": 3,
+        "special_offers": [
+          "Personalized concierge service",
+          "In-room spa treatments"
+        ],
+        "img1": "https://i.imgur.com/u66OJ4r.jpg",
+        "img2": "https://i.imgur.com/rzm0F8L.jpg",
+        "img3": "https://i.imgur.com/SXm1KGz.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Standard Room",
+        "description": "Our comfortable Standard Room is perfect for those seeking a cozy and affordable stay. It features a queen-size bed, a compact work area, and all the essential amenities for a pleasant visit. Enjoy a peaceful night's sleep and access to all the hotel's facilities.",
+        "price_per_night": 150,
+        "room_size": "300 sq. ft",
+        "available_rooms": 15,
+        "special_offers": [
+          "Free parking",
+          "On-site dining"
+        ],
+        "img1": "https://i.imgur.com/aiAQguq.jpg",
+        "img2": "https://i.imgur.com/Aw2ZAkl.jpg",
+        "img3": "https://i.imgur.com/hgS7x8r.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Executive Suite",
+        "description": "Elevate your stay in our Executive Suite, offering a spacious bedroom, a separate living room, and a private terrace with garden views. Enjoy a blend of elegance and comfort in a serene environment. This suite is perfect for business travelers or those seeking a little extra space.",
+        "price_per_night": 400,
+        "room_size": "700 sq. ft",
+        "available_rooms": 7,
+        "special_offers": [
+          "Complimentary breakfast",
+          "Airport shuttle service"
+        ],
+        "img1": "https://i.imgur.com/s5XSCg5.jpg",
+        "img2": "https://i.imgur.com/tpgCuau.jpg",
+        "img3": "https://i.imgur.com/xr3Y4Fy.jpg"
+      }
+    ]
+  
+  

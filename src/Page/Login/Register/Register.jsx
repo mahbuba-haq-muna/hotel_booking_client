@@ -2,7 +2,6 @@ import img from '../../../assets/user-login-icon-974x1024-jyp1q1de.png'
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
-import { updateProfile } from "firebase/auth";
 import { AuthContext } from '../../../Component/AuthProvider/AuthProvider';
 
 const Register = () => {

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Room = ({room}) => {
 
-    const { img1, name, id, price_per_night } = room;
+    const { img1, name, _id, price_per_night } = room;
 
     return (
-       <Link>
+       <Link to={`/rooms/${_id}`}>
         <div className="">
             <img src={img1} alt="" className="h-60 rounded-md w-96 relative" />
         </div>

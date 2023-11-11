@@ -6,6 +6,7 @@ import ErrorPage from '../ErrorPage/ErrorPage';
 import Login from '../Page/Login/Login';
 import Register from '../Page/Login/Register/Register';
 import Rooms from '../Page/Rooms/Rooms';
+import RoomDetails from '../Component/RoomDetails/RoomDetails';
 
 const router = createBrowserRouter([
     {
@@ -29,8 +30,13 @@ const router = createBrowserRouter([
         {
           path: '/rooms',
           element : <Rooms></Rooms>,
-          loader: () => fetch(`/public/rooms.json`)
-        }
+          loader: () => fetch(`http://localhost:5000/rooms`)
+        },
+      {
+        path: '/rooms/:id',
+        element: <RoomDetails></RoomDetails>,
+        loader: ({params}) => fetch(`http://localhost:5000/rooms/${params.id}`)
+      }
       ]
     },
   ]);

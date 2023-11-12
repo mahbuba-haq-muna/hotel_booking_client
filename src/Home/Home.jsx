@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner/Banner";
 import Testimonial from "../Component/Testimonial/Testimonial";
+import PageTitle from "../Component/PageTitle/PageTitle";
 
 
 const Home = () => {
@@ -8,6 +9,9 @@ const Home = () => {
     const { name, location, rating, img, comment, id } = client;
     return (
         <div>
+            <PageTitle
+            title='Royal Oasis Home'
+            ></PageTitle>
             <Banner></Banner>
 
 

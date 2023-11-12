@@ -1,8 +1,12 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Room from "../../Component/Room/Room";
+import PageTitle from "../../Component/PageTitle/PageTitle";
 
 
 const Rooms = () => {
+    // title
+    <PageTitle title='Rooms'></PageTitle>
+
     const rooms = useLoaderData();
     const { img1, name, id, price_per_night } = rooms;
     return (

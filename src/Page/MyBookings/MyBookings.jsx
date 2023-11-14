@@ -8,24 +8,14 @@ const MyBookings = () => {
     const [bookings, setBookings] = useState([])
 
     const handleDelete = id =>{
-        const proceed = Swal.fire({
-            title: "Are you sure?",
-            text: "You won't be able to revert this!",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!"
-          })
-          .then((result) => {
-            if (result.isConfirmed) {
-              Swal.fire({
-                title: "Deleted!",
-                text: "Your file has been deleted.",
-                icon: "success"
-              });
-            }
+        const proceed =
+        
+        toast.success("", {
+            position: toast.POSITION.TOP_CENTER
           });
+        
+        
+        
           if(proceed) {
             fetch(`http://localhost:5000/bookings/${id}`,{
                 method: "DELETE"
@@ -34,12 +24,32 @@ const MyBookings = () => {
             .then(data => {
                 console.log(data);
                 if(data.deletedCount > 0){
-                    toast.success("Deleted Successfully", {
-                        position: toast.POSITION.TOP_CENTER
-                      });
-                      const remaining = 
+                
+                    Swal.fire({
+                        title: "Are you sure?",
+                        text: "You won't be able to revert this!",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Yes, delete it!"
+                      })
+                      .then((result) => {
+                        if (result.isConfirmed) {
+                          Swal.fire({
+                            title: "Deleted!",
+                            text: "Your file has been deleted.",
+                            icon: "success"
+                          });
+                        }
+                      });  
+                   
+                      const remaining = bookings?.filter(booking => booking._id != id)
+                      setBookings(remaining)
                 }
+            
             })
+        
           }
     }
 

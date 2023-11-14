@@ -1,13 +1,18 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
 import moment from 'moment';
+import Swal from "sweetalert2";
 
 
 const BookingInfo = ({ room }) => {
-    const { img1, img2, img3, description, name, price_per_night, room_size, available_rooms, special_offers } = room;
+    const { img1, name, available_rooms } = room;
 
     const { user } = useContext(AuthContext);
+
+    
+
+     
 
     const handleBooking = event => {
         event.preventDefault();
@@ -29,14 +34,22 @@ const BookingInfo = ({ room }) => {
         fetch('http://localhost:5000/bookings', {
             method: 'POST',
             headers: {
-                "Content-Type": "application/json"
+                "content-type": "application/json"
             },
             body: JSON.stringify(booking)
         })
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data)
-        })  
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data)
+                if (data.insertedId) {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Booked",
+                        text: "Booked the room successfully",
+                    });
+                }
+            })
+
     }
 
     return (
@@ -70,7 +83,7 @@ const BookingInfo = ({ room }) => {
                             <label className="label">
                                 <span className="label-text">Room</span>
                             </label>
-                            <input type="number" name="room" placeholder="Quantity of room" className="input input-bordered" />
+                            <input  type="number" name="room" placeholder="Quantity of room" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">

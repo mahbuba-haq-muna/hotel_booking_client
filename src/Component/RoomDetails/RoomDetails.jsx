@@ -1,14 +1,16 @@
 import { useLoaderData } from "react-router-dom";
 import { FaCheck } from "react-icons/fa";
 import BookingInfo from "../BookingInfo/BookingInfo";
+import { useState } from "react";
 
 
 const RoomDetails = () => {
     const room = useLoaderData();
     const { img1, img2, img3, description, name, price_per_night, room_size, available_rooms,special_offers } = room;
+
+    const [inputNumber, setInputNumber] = useState('');
+
     return (
-
-
 
         <div className="p-10">
             <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -73,6 +75,9 @@ const RoomDetails = () => {
             <div>
                 <BookingInfo
                 room={room}
+                setInputNumber={setInputNumber}
+                inputNumber={inputNumber}
+
                 ></BookingInfo>
             </div>
         </div>

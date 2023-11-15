@@ -9,10 +9,20 @@ const Rooms = () => {
     // title
     <PageTitle title='Rooms'></PageTitle>
     const [asc, setAsc] = useState(true)
-    const rooms = useLoaderData();
+    const [rooms, setRooms] = useState([])
     const { img1, name, id, price_per_night } = rooms;
     const [review, setReview] = useState([]);
     const{reviewer, rating, today, comment, _id, room} = review;
+
+
+    useEffect(() => {
+
+        fetch(`http://localhost:5000/rooms?sort=${asc? 'asc' :'des'}`)
+            .then(res => res.json())
+            .then(data => {
+                setRooms(data)
+            })
+    }, [asc])
 
     useEffect(() => {
 
@@ -33,7 +43,7 @@ const Rooms = () => {
                 }
             </button>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 mb-20">
+            <div className="grid md:grid-cols-2 gap-12 mb-20">
             
             {
                 rooms?.map(room => <Room

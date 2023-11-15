@@ -21,7 +21,7 @@ const Rooms = () => {
                 }
             </button>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid gap-8">
             {
                 rooms?.map(room => <Room
                 key={room.id}

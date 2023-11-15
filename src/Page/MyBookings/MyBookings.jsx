@@ -6,11 +6,12 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const MyBookings = () => {
     const [bookings, setBookings] = useState([])
+    const { _id, userName, img1, name, number, city, room, date } = bookings;
 
     const handleDelete = id =>{
         const proceed =
         
-        toast.success("", {
+        toast.success("Are You Sure to Delete?", {
             position: toast.POSITION.TOP_CENTER
           });
         
@@ -53,6 +54,30 @@ const MyBookings = () => {
           }
     }
 
+
+    // const updateDate = id =>{
+    //     fetch(`http://localhost:5000/bookings/${id}`, {
+    //         method: 'PUT',
+    //         headers: {
+    //             "content-type": "application/json"
+    //         },
+    //         body: JSON.stringify({date : date})
+    //     })
+    //     .then(res => res.json())
+    //     .then(data =>{
+    //         console.log(data)
+    //         if(data.modifiedCount > 0){
+    //             Swal.fire({
+    //                 title: 'Success!',
+    //                 text: 'Update Successfully',
+    //                 icon: 'success',
+    //                 confirmButtonText: 'Cool'
+    //             })
+    //         }
+    //     })
+    // }
+
+
     const url = 'http://localhost:5000/bookings';
 
     useEffect(() => {
@@ -76,6 +101,7 @@ const MyBookings = () => {
                             <th>Room Name</th>
                             <th>City</th>
                             <th>Date</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -84,6 +110,7 @@ const MyBookings = () => {
                             key={booking._id}
                             booking={booking}
                             handleDelete={handleDelete}
+                            
                             >
                             </Bookings>)
                         }

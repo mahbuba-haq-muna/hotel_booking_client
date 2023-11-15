@@ -10,7 +10,32 @@ const BookingInfo = ({ room }) => {
 
     const { user } = useContext(AuthContext);
 
-    
+    const handleReview = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const reviewer = form.reviewer.value;
+        const rating = form.rating.value;
+        const today = form.today.value;
+        const comment = form.comment.value;
+
+        const review ={
+            reviewer, rating, today, comment
+        }
+        console.log(review)
+        
+        fetch('http://localhost:5000/review', {
+            method: 'POST',
+            headers:  {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(review)
+        })
+        .then(res => res.json())
+        .then(data=>{
+            console.log(data)
+        })
+
+    }
 
      
 
@@ -111,35 +136,35 @@ const BookingInfo = ({ room }) => {
             </div>
 
 
-
+                {/* review */}
             <div className="lg:w-2/3 h-fit lg:mx-auto bg-green-200 rounded-lg">
                 {
                     user ? <div>
                         <h1 className="text-3xl font-bold text-center py-5 text-green-800">Review the Room</h1>
-                        <form className="card-body">
+                        <form onSubmit={handleReview} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" placeholder="name" className="input input-bordered" required />
+                                <input type="text" placeholder="name" name="reviewer" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Rating</span>
                                 </label>
-                                <input type="text" className="input input-bordered" />
+                                <input type="number" name="rating"  className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Comment</span>
                                 </label>
-                                <textarea className="textarea textarea-bordered" placeholder="comment"></textarea>
+                                <textarea className="textarea textarea-bordered" placeholder="comment" name="comment"></textarea>
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text"> Date</span>
                                 </label>
-                                <input type="text" defaultValue={moment().format("MMM Do YYYY")} className="input input-bordered" />
+                                <input type="text" name="today" defaultValue={moment().format("MMM Do YYYY")} className="input input-bordered" />
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn bg-btnColor text-white">Post Review</button>

@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: '/rooms/:id',
         element: <RoomDetails></RoomDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/rooms/${params.id}`)
+        loader: ({params}) => fetch(`https://hotel-booking-server-rouge.vercel.app/rooms/${params.id}`)
       } ,
       {
         path: '/myBookings',

@@ -24,7 +24,7 @@ const BookingInfo = ({ room }) => {
         }
         console.log(review)
         
-        fetch('http://localhost:5000/review', {
+        fetch('https://hotel-booking-server-rouge.vercel.app/review', {
             method: 'POST',
             headers:  {
                 "content-type": "application/json"
@@ -63,7 +63,7 @@ const BookingInfo = ({ room }) => {
 
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://hotel-booking-server-rouge.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"

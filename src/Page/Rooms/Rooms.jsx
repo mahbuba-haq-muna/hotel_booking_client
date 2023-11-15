@@ -17,7 +17,7 @@ const Rooms = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/rooms?sort=${asc? 'asc' :'des'}`)
+        fetch(`https://hotel-booking-server-rouge.vercel.app/rooms?sort=${asc? 'asc' :'des'}`)
             .then(res => res.json())
             .then(data => {
                 setRooms(data)
@@ -26,7 +26,7 @@ const Rooms = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/review')
+        fetch('https://hotel-booking-server-rouge.vercel.app/review')
             .then(res => res.json())
             .then(data => {
                 setReview(data)

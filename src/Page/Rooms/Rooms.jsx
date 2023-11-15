@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Room from "../../Component/Room/Room";
 import PageTitle from "../../Component/PageTitle/PageTitle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Areview from "../../Component/Areview/Areview";
 
 
 const Rooms = () => {
@@ -10,6 +11,17 @@ const Rooms = () => {
     const [asc, setAsc] = useState(true)
     const rooms = useLoaderData();
     const { img1, name, id, price_per_night } = rooms;
+    const [review, setReview] = useState([]);
+    const{reviewer, rating, today, comment, _id, room} = review;
+
+    useEffect(() => {
+
+        fetch('http://localhost:5000/review')
+            .then(res => res.json())
+            .then(data => {
+                setReview(data)
+            })
+    }, [])
     return (
         <div className="px-10 pb-20">
             <h2 className="text-3xl lg:text-5xl text-green-800 font-bold text-center">Room Types</h2>
@@ -21,7 +33,8 @@ const Rooms = () => {
                 }
             </button>
             </div>
-            <div className="grid gap-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-20">
+            
             {
                 rooms?.map(room => <Room
                 key={room.id}
@@ -29,6 +42,20 @@ const Rooms = () => {
                 ></Room>)
             }
             </div>
+
+            <h2 className="text-4xl text-center font-bold text-green-800 my-7">Customer Reviews</h2>
+
+            <div className="grid md:grid-cols-2 gap-8">
+                {
+                    review?.map(aReview =><Areview
+                    key={aReview._id}
+                    aReview={aReview}
+                    >
+
+                    </Areview>)
+                }
+            </div>
+            
         </div>
     ); 
 };

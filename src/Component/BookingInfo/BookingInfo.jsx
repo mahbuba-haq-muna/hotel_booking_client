@@ -17,9 +17,10 @@ const BookingInfo = ({ room }) => {
         const rating = form.rating.value;
         const today = form.today.value;
         const comment = form.comment.value;
+        const room = form.room.value;
 
         const review ={
-            reviewer, rating, today, comment
+            reviewer, rating, today, comment, room
         }
         console.log(review)
         
@@ -33,6 +34,12 @@ const BookingInfo = ({ room }) => {
         .then(res => res.json())
         .then(data=>{
             console.log(data)
+            if (data.insertedId) {
+                Swal.fire({
+                    icon: "success",
+                    title: "Review Done",
+                });
+            }
         })
 
     }
@@ -147,6 +154,12 @@ const BookingInfo = ({ room }) => {
                                     <span className="label-text">Name</span>
                                 </label>
                                 <input type="text" placeholder="name" name="reviewer" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Room Name</span>
+                                </label>
+                                <input type="text" defaultValue={name} name="room" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">

@@ -10,14 +10,14 @@ const Rooms = () => {
     <PageTitle title='Rooms'></PageTitle>
     const [asc, setAsc] = useState(true)
     const [rooms, setRooms] = useState([])
-    const { img1, name, id, price_per_night } = rooms;
+    const { img1, name, _id, price_per_night } = rooms;
     const [review, setReview] = useState([]);
-    const{reviewer, rating, today, comment, _id, room} = review;
+    const{reviewer, rating, today, comment, id, room} = review;
 
 
     useEffect(() => {
 
-        fetch(`https://hotel-booking-server-rouge.vercel.app/rooms?sort=${asc? 'asc' :'des'}`)
+        fetch(`http://localhost:5000/rooms?sort=${asc? 'asc' :'des'}`)
             .then(res => res.json())
             .then(data => {
                 setRooms(data)
@@ -26,7 +26,7 @@ const Rooms = () => {
 
     useEffect(() => {
 
-        fetch('https://hotel-booking-server-rouge.vercel.app/review')
+        fetch('http://localhost:5000/review')
             .then(res => res.json())
             .then(data => {
                 setReview(data)
@@ -47,7 +47,7 @@ const Rooms = () => {
             
             {
                 rooms?.map(room => <Room
-                key={room.id}
+                key={room._id}
                 room={room}
                 ></Room>)
             }

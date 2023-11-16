@@ -18,7 +18,7 @@ const MyBookings = () => {
         
         
           if(proceed) {
-            fetch(`https://hotel-booking-server-rouge.vercel.app/bookings/${id}`,{
+            fetch(`http://localhost:5000/bookings/${id}`,{
                 method: "DELETE"
             })
             .then(res => res.json())
@@ -56,7 +56,7 @@ const MyBookings = () => {
 
     useEffect(() => {
 
-        fetch('https://hotel-booking-server-rouge.vercel.app/bookings')
+        fetch('http://localhost:5000/bookings')
             .then(res => res.json())
             .then(data => {
                 setBookings(data)

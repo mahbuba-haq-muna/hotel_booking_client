@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>,
-            loader: () => fetch(`/public/testimonial.json`)
+            loader: () => fetch(`/testimonial.json`)
         },
         {
           path: '/login',
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: '/rooms/:id',
         element: <RoomDetails></RoomDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/rooms/${params.id}`)
+        loader: ({params}) => fetch(`https://hotel-booking-server-navy.vercel.app/rooms/${params.id}`)
       } ,
       {
         path: '/myBookings',

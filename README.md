@@ -1,8 +1,11 @@
-# [@live_link](https://flourishing-banoffee-bcc203.netlify.app/)
+# [@live_link(https://royel-oasis-client.web.app/)](https://royel-oasis-client.web.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features of Royal Oasis hotel booking site:
+
+-In home page you can see a banner, a promotion of our winter discount, testimony, our location and other information.
+-In rooms page there has a list of our rooms with image, name and price per night. also reviews.
+-By clicking one room you can see the details of that room
+-one can book a room. they need to fill up a form to book and review the room. but one have to login first to do this. this reviews will display in rooms page
+-After booking room users could see the list of there booking and gan delete a booking

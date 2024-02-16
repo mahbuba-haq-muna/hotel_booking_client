@@ -9,6 +9,7 @@ import Rooms from '../Page/Rooms/Rooms';
 import RoomDetails from '../Component/RoomDetails/RoomDetails';
 import MyBookings from '../Page/MyBookings/MyBookings';
 import PrivateRoute from './PrivateRout';
+import About from '../Page/About/About';
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             path: '/',
             element: <Home></Home>,
             loader: () => fetch(`/testimonial.json`)
+        },
+        {
+          path: '/about',
+          element: <About></About>
         },
         {
           path: '/login',

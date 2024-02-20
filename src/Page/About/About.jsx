@@ -3,7 +3,8 @@
 const About = () => {
     return (
         <div>
-            About us
+            <h1 className="text-3xl text center"> About Us</h1>
+            
         </div>
     );
 };

@@ -2,9 +2,9 @@
 
 const About = () => {
     return (
-        <div>
-            <h1 className="text-3xl text center"> Our story</h1>
-            <p className="text center">Welcome to Royal oasis, where every guest becomes part of our story. From the moment you step through our doors, you embark on a journey of luxury, comfort, and unforgettable experiences.
+        <div className="py-20 px-10">
+            <h1 className="text-3xl text-center"> Our story</h1>
+            <p className="text-center">Welcome to Royal oasis, where every guest becomes part of our story. From the moment you step through our doors, you embark on a journey of luxury, comfort, and unforgettable experiences.
 
                 It all began with a vision to create a haven where travelers could escape the ordinary and immerse themselves in the extraordinary. Nestled in the heart of , our hotel boasts a rich history and a commitment to excellence that sets us apart.
 

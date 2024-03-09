@@ -18,6 +18,7 @@ const Navbar = () => {
         <li><Link to={'/rooms'}>Rooms</Link></li>
         <li><Link to={'/myBookings'}>My Bookings</Link></li>
         <li><Link to={'/about'}>About us</Link></li>
+        <li><Link to={'/contact'}>Contact us</Link></li>
        
     </>
 

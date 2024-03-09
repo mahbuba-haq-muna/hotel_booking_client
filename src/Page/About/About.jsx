@@ -106,10 +106,7 @@ const About = () => {
             <img src={icon6} alt="" />
             <h2 className="text-2xl">Special Offers</h2>
           </div>
-          <div>
-            <img src={icon6} alt="" />
-            <h2 className="text-2xl">Special Offers</h2>
-          </div>
+          
         </div>
       </div>
 

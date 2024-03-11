@@ -9,30 +9,13 @@ import icon6 from "../../assets/h5-img-07.png"
 const About = () => {
   return (
     <div className=" px-10">
-      <div className="hero h-screen relative" style={{
+      <div className="hero h-screen relative bg-fixed" style={{
         backgroundImage: `url(https://i.ibb.co/bRck9XL/outdoor-terrace-sea-nature-beach-1203-5576.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}>
         <div className="hero-overlay bg-black bg-opacity-40 absolute inset-0"></div>
-        {/* <motion.div
-          className="lg:bottom-10 lg:left-20 bottom-5 left-5 absolute hidden md:block "
-          animate={{
-            scale: [1, 1.2, 1], 
-          }}
-          transition={{
-            duration: 5, 
-            repeat: Infinity, 
-            ease: 'easeInOut', 
-            repeatDelay: 1, 
-          }}
-        >
-          <motion.img
-            src={img1}
-            alt="Zooming Image"
-            className="lg:w-32 w-24"
-          />
-        </motion.div> */}
+        
         <div className="hero-content text-center text-neutral-content relative z-10  ">
 
           <div className="max-w-md text-white">
@@ -40,25 +23,7 @@ const About = () => {
           </div>
 
         </div>
-        {/* <motion.div
-          className="absolute top-5 right-5 lg:top-20 lg:right-40 hidden md:block"
-          animate={{
-            rotate: 360, 
-          }}
-          transition={{
-            duration: 10, 
-            repeat: Infinity, 
-            ease: 'linear', 
-          }}
-          originX={0.5}
-          originY={0.5}
-        >
-          <motion.img
-            src={img2}
-            alt="Rotating Image"
-            className="w-24 h-24"
-          />
-        </motion.div> */}
+        
       </div>
       <div className="py-20">
         <h1 className="text-3xl text-center"> Our story</h1>

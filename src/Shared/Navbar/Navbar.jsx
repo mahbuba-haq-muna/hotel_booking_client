@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo.png'
 import { useContext } from "react";
 import { AuthContext } from "../../Component/AuthProvider/AuthProvider";
+
+
 
 
 const Navbar = () => {
@@ -14,11 +16,11 @@ const Navbar = () => {
         }
 
     const navItems = <>
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'/rooms'}>Rooms</Link></li>
-        <li><Link to={'/myBookings'}>My Bookings</Link></li>
-        <li><Link to={'/about'}>About us</Link></li>
-        <li><Link to={'/contact'}>Contact us</Link></li>
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'/rooms'}>Rooms</NavLink></li>
+        <li><NavLink to={'/myBookings'}>My Bookings</NavLink></li>
+        <li><NavLink to={'/about'}>About us</NavLink></li>
+        <li><NavLink to={'/contact'}>Contact us</NavLink></li>
        
     </>
 

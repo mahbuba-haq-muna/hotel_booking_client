@@ -34,7 +34,7 @@ const Rooms = () => {
     }, [])
     return (
         <div className="px-10 pb-20">
-            <h2 className="text-3xl lg:text-5xl text-green-800 font-bold text-center">Room Types</h2>
+            <h2 className="text-3xl lg:text-5xl text-green-800 font-bold text-center lg:mt-20">Room Types</h2>
             <p className="text-xl text-btnColor font-semibold text-center py-7 ">Immerse Yourself in Pure Luxury at Royal Oasis</p>
             <div className="text-center mb-10">
             <button className="btn bg-btnColor" onClick={()=> setAsc(!asc)}>

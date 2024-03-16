@@ -1,5 +1,4 @@
 
-import { motion } from "framer-motion"
 import icon1 from "../../assets/h5-img-02.png"
 import icon2 from "../../assets/h5-img-03.png"
 import icon3 from "../../assets/h5-img-04.png"
@@ -8,7 +7,7 @@ import icon5 from "../../assets/h5-img-06.png"
 import icon6 from "../../assets/h5-img-07.png"
 const About = () => {
   return (
-    <div className=" px-10">
+    <div>
       <div className="hero h-screen relative bg-fixed" style={{
         backgroundImage: `url(https://i.ibb.co/bRck9XL/outdoor-terrace-sea-nature-beach-1203-5576.jpg)`,
         backgroundSize: "cover",
@@ -25,8 +24,8 @@ const About = () => {
         </div>
         
       </div>
-      <div className="py-20">
-        <h1 className="text-3xl text-center"> Our story</h1>
+      <div className="py-20 px-10">
+        <h1 className="text-3xl text-center mb-10 font-bold text-green-800"> Our story</h1>
         <p className="text-center">Welcome to Royal oasis, where every guest becomes part of our story. From the moment you step through our doors, you embark on a journey of luxury, comfort, and unforgettable experiences.
 
           It all began with a vision to create a haven where travelers could escape the ordinary and immerse themselves in the extraordinary. Nestled in the heart of , our hotel boasts a rich history and a commitment to excellence that sets us apart.
@@ -43,33 +42,34 @@ const About = () => {
 
           Come, write your own chapter in our story. Your journey begins here, at Royal oasis.</p>
       </div>
-      <div className="mb-20 ">
-        <div className="flex justify-evenly">
-          <div >
-            <img src={icon1} alt="" />
-            <h2 className="text-2xl">High Rating</h2>
+      <div className="mb-20 px-20">
+        <h2 className="text-center text-3xl my-20 font-semibold">Our Facilities</h2>
+        <div className="grid lg:grid-cols-3 gap-20  w-fit mx-auto">
+          <div className="w-56 ">
+            <img src={icon1} alt="" className="w-fit mx-auto"/>
+            <h2 className="text-2xl text-center">High Rating</h2>
           </div>
-          <div>
-            <img src={icon2} alt="" />
-            <h2 className="text-2xl">Quiet Hours</h2>
+          <div className="w-56 ">
+            <img src={icon2} alt="" className="w-fit mx-auto"/>
+            <h2 className="text-2xl text-center">Quiet Hours</h2>
           </div>
-          <div>
-            <img src={icon3} alt="" />
-            <h2 className="text-2xl">Best Locations</h2>
+          <div className="w-56 ">
+            <img src={icon3} alt="" className="w-fit mx-auto"/>
+            <h2 className="text-2xl text-center">Best Locations</h2>
           </div>
         </div>
-        <div className="flex justify-evenly pt-20">
-          <div >
-            <img src={icon4} alt="" />
-            <h2 className="text-2xl">Free Cancellation</h2>
+        <div className="grid lg:grid-cols-3 gap-20 pt-20 w-fit mx-auto">
+          <div className="w-56 ">
+            <img src={icon4} alt="" className="w-fit mx-auto"/>
+            <h2 className="text-2xl text-center">Free Cancellation</h2>
           </div>
-          <div>
-            <img src={icon5} alt="" />
-            <h2 className="text-2xl">Payment Options</h2>
+          <div className="w-56 ">
+            <img src={icon5} alt="" className="w-fit mx-auto"/>
+            <h2 className="text-2xl text-center">Payment Options</h2>
           </div>
-          <div>
-            <img src={icon6} alt="" />
-            <h2 className="text-2xl">Special Offers</h2>
+          <div className="w-56 ">
+            <img src={icon6} alt="" className="w-fit mx-auto" />
+            <h2 className="text-2xl text-center">Special Offers</h2>
           </div>
           
         </div>

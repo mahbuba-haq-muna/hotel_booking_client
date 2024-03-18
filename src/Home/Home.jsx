@@ -17,9 +17,7 @@ const Home = () => {
     const { name, location, rating, img, comment, id } = client;
     return (
         <div>
-            <PageTitle
-                title='Royal Oasis Home'
-            ></PageTitle>
+            
             <Banner></Banner>
 
              {/* discount */}

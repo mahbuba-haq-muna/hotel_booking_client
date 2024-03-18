@@ -20,7 +20,7 @@ const Navbar = () => {
         <li className="text-lg font-semibold text-green-800"><NavLink to={'/rooms'}>Rooms</NavLink></li>
         <li className="text-lg font-semibold text-green-800"><NavLink to={'/myBookings'}>My Bookings</NavLink></li>
         <li className="text-lg font-semibold text-green-800"><NavLink to={'/about'}>About us</NavLink></li>
-        {/* <li><NavLink to={'/contact'}>Contact us</NavLink></li> */}
+        <li className="text-lg font-semibold text-green-800"><NavLink to={'/contact'}>Contact us</NavLink></li>
        
     </>
 

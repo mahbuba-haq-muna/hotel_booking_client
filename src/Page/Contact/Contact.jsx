@@ -19,7 +19,7 @@ const Contact = () => {
                 </div>
 
             </div>
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 mx-auto">
               <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
                 <form >
                   <div className="mb-6">
@@ -80,7 +80,7 @@ const Contact = () => {
                       />
                     </svg>
                   </span>
-                  <span className="absolute -right-10 top-[90px] z-[-1]">
+                  {/* <span className="absolute -right-10 top-[90px] z-[-1]">
                     <svg
                       width="34"
                       height="134"
@@ -869,7 +869,7 @@ const Contact = () => {
                         fill="#13C296"
                       />
                     </svg>
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </div>

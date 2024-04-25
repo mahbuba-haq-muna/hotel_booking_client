@@ -1,7 +1,6 @@
 import img from '../../../assets/user-login-icon-974x1024-jyp1q1de.png'
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import Swal from 'sweetalert2'
 import { AuthContext } from '../../../Component/AuthProvider/AuthProvider';
 
 const Register = () => {
@@ -21,16 +20,16 @@ const Register = () => {
         const photo = form.get('photo');
         console.log(email, password, name , photo);
 
-        if (!/^(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=.{6,})/.test(password)){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Your password should have at least 6 characters with a capital letter and a special character',
+        // if (!/^(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=.{6,})/.test(password)){
+        //     Swal.fire({
+        //         icon: 'error',
+        //         title: 'Oops...',
+        //         text: 'Your password should have at least 6 characters with a capital letter and a special character',
                 
-              })
+        //       })
 
-              return;
-        }
+        //       return;
+        // }
 
         setSuccess('');
         setRegisterError('');
